@@ -15,6 +15,7 @@ const Requestor = require('./lib/_requestor');
 const Tenant = require('./lib/Tenant');
 const Account = require('./lib/Account');
 const Auth = require('./lib/Auth');
+const Space = require('./lib/Space');
 /**
  * 
  *
@@ -43,6 +44,7 @@ module.exports = function(baseUrl, opts) {
   client.tenant = new Tenant(requestor);
   client.account = new Account(requestor);
   client.auth = new Auth(requestor);
+  client.space = new Space(requestor);
 
   return client;
 };
