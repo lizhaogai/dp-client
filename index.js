@@ -16,6 +16,8 @@ const Tenant = require('./lib/Tenant');
 const Account = require('./lib/Account');
 const Auth = require('./lib/Auth');
 const Space = require('./lib/Space');
+const Task = require('./lib/Task');
+const TaskStatus = require('./lib/TaskStatus');
 /**
  * 
  *
@@ -45,6 +47,8 @@ module.exports = function(baseUrl, opts) {
   client.account = new Account(requestor);
   client.auth = new Auth(requestor);
   client.space = new Space(requestor);
+  client.task = new Task(requestor);
+  client.taskStatus = new TaskStatus(requestor);
 
   return client;
 };
