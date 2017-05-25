@@ -16,7 +16,7 @@
     "up": "yo oac --force"
   },
   "dependencies": {
-    "axios2": "^0.15.3",
+    "axios": "^0.15.3",
     "debug": "^2.6.0",
     "qs": "^6.3.0"
   }
